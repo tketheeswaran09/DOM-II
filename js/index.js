@@ -46,3 +46,18 @@ destinationHover[1].addEventListener("mouseover", e => {
 destinationHover[2].addEventListener("mouseover", e => {
     console.log("clicked:island");
 });
+
+
+// Variables
+busClickCount = 0;
+
+const topImgSelector = document.querySelector('img');
+const letsGoHeading = document.querySelector('.text-content h2');
+
+
+// Bus click
+topImgSelector.addEventListener('click', () => {
+    busClickCount++;
+    alert(`Try again! Score: ${busClickCount}.`)
+});
+
